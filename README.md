@@ -8,7 +8,7 @@
 
 Язык: Typescript
 
-Библиотека: @angular/common/http и Rxjs
+Библиотеки: @angular/common/http и Rxjs
 
 ## Spring Boot
 
