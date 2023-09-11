@@ -1,0 +1,28 @@
+.body-support-us {
+  background: url("src/assets/image/background/background-note-update/background-update-note1.jpg");
+  background-size: cover;
+}
+
+
+
+.title-support-us{
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  padding-block: 50px;
+  animation: title-support-us 1.5s;
+}
+
+
+@keyframes title-support-us{
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+
+  100%{
+    opacity: 1;
+    transform: none
+  }
+
+}

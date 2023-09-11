@@ -1,0 +1,94 @@
+@import "primeicons/primeicons.css";
+/* You can add global styles to this file, and also import other style files */
+
+.padding-block-body {
+  padding-block: 5%;
+}
+
+.right_place{
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.navbar-brand:hover{
+  background-color:#e7e7e7;
+  transition: 0.3s;
+}
+
+.pi-chevron-down:before{
+   font-size: 2em !important;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.nav-component{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.p-fieldset-toggleable .p-fieldset-legend a {
+  justify-content: flex-start !important;
+  text-decoration: none !important;
+}
+
+
+.p-fieldset .p-fieldset-legend {
+  background-color: darkgray !important;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a {
+  color: white !important;
+}
+
+.p-fieldset {
+  background-color: darkgray !important;
+}
+
+@media (max-width: 1000px) {
+  .right_place{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nav-component{
+    position: initial;
+  }
+  .padding-block-body {
+    padding-block: 0;
+  }
+}
+

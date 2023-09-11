@@ -1,0 +1,59 @@
+.content-sign-form {
+  background-image: url("src/assets/image/background/background-form/user/user-back-form.jpg");
+  background-size:cover;
+}
+
+.btn-footer-item {
+  height: 55px;
+  width: 80%;
+  font-size: 20px;
+  background: #346cdb;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  color: #ffffff;
+  border: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.btn-footer-item:hover{
+  background: #244593;
+}
+
+.btn-footer-item:disabled {
+  background: gray;
+}
+
+.button-footer{
+  padding-bottom: 5%;
+  font-size: 22px;
+  display: grid;
+  justify-content: center;
+  row-gap: 20px;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(270px, min(100%/2, max(270px, 100%/2))));
+  justify-items: center;
+}
+
+
+.label-name-input{
+  padding-bottom:30px;
+  font-size: 120%;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+}
+
+.input-user-form{
+  width: 100%;
+  font-size: 20px;
+}
+
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}

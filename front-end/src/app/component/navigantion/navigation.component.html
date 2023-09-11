@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-quakeopneworld">
+
+  <a  class="navbar-brand navbar-main-title" href="/">Quake Openworld</a>
+
+  <a  class="navbar-brand navbar-main-column" href="/how-to-play">Play</a>
+
+  <a class="navbar-brand navbar-main-column" href="/support-page">Support us</a>
+
+  <a class="navbar-brand navbar-main-column" href="/update-note">News</a>
+
+  <div class="right_place">
+    <ng-template [ngIf]="userIsLog" [ngIfElse]="userIsNotAutho">
+      <div class="dropdown">
+        <a class="navbar-brand pointer-focus-element navbar-reg-sign">Account</a>
+        <div class="dropdown-content">
+          <div style="background-color: gray; margin-top:10px;">
+            <a class="dropdown-column" href="/prof">Profile</a>
+            <a class="dropdown-column" href="/inventory">Inventory</a>
+            <a class="dropdown-column pointer-focus-element" (click)="signOutUser()">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #userIsNotAutho>
+      <a class="navbar-brand pointer-focus-element navbar-reg-sign" href="/authentication">Sign in</a>
+    </ng-template>
+  </div>
+</nav>
+
+
+
+

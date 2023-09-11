@@ -1,0 +1,211 @@
+
+.padding-top-body{
+  padding-top: 5%;
+}
+
+.footer-content{
+  background-color:#1c1c1c;
+  height: 200px;
+  bottom: 0;
+  width: 100%;
+}
+
+.content-section-main{
+  background-image: url("src/assets/image/background/background-main/background-main.jpg");
+  background-size:cover;
+}
+
+.content-section-about-game{
+  background-image: url("src/assets/image/background/background-main/background-about.png");
+  background-size:cover;
+  color: white;
+  flex: 1;
+  min-height: 700px;
+  padding-block: 50px;
+}
+
+.content-section-screenshot{
+  background-image: url("src/assets/image/background/background-main/background-screenshot.png");
+  background-size:cover;
+  color: white;
+  flex: 1;
+  min-height: 1200px;
+  padding-block: 50px;
+}
+
+.content-conf-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block-footer {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+}
+
+
+.logo-vk-discord-img{
+  width: 75px;
+  height:75px;
+  filter: brightness(0) invert(1);
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.form-add-user{
+  width: 50%;
+  height: 50%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-quake{
+  color: #ffffff;
+  offset-position: top;
+  font-size: 5rem;
+  text-align: center;
+  animation: title-quake-ani 1.5s;
+}
+
+.desc-quake{
+  margin-block: 50px;
+  text-align: center;
+  font-size: 2em;
+  animation: title-quake-ani 1.5s 1.5s both;
+}
+
+
+
+
+:host ::ng-deep .p-sidebar {
+  background-size: cover;
+  background-position-x: right;
+  background-image: url("src/assets/image/background/background-form/user/user-back-form.jpg") !important;
+  border-radius: 10px;
+  border-style: double;
+}
+
+:host ::ng-deep .p-sidebar [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+:host ::ng-deep .p-sidebar-header {
+  padding: 20px;
+}
+
+.scroll-down-to-el{
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  background-color: rgb(55 55 55 / 75%);
+  color: white;
+  text-align: center;
+}
+
+.button-scroll-down{
+  height: 100%;
+  width: 5%;
+}
+
+.p-button:enabled:hover{
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.p-button:enabled:focus{
+  box-shadow: none;
+}
+
+.content-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.div:last-of-type {
+  background-color: gray;
+}
+
+.item-screen-game {
+  width: 1200px;
+  height: 700px;
+  display: block;
+}
+
+.item-screen-work-platform{
+  width: auto;
+  height: 500px;
+  display: block
+}
+
+@keyframes title-quake-ani {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100%{
+    opacity: 1;
+    transform: none
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .content-main-section{
+    height: auto;
+  }
+
+  .content-main{
+    overflow-y:scroll;
+  }
+
+  .block-footer{
+    padding-bottom: 0;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .padding-top-body{
+    padding-top: 0;
+  }
+
+  .footer-content {
+    position: unset;
+    height: auto;
+  }
+
+  .content-section-about-game {
+    min-height: 1200px;
+  }
+
+  .content-conf-game{
+    flex-direction: column;
+  }
+  .item-screen-game {
+    width: 90%;
+  }
+  .item-screen-work-platform{
+    width: 100%;
+  }
+  .content-section-screenshot{
+    min-height: 1400px;
+  }
+}

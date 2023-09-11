@@ -1,0 +1,76 @@
+.dropdown-column {
+  color: white;
+  font-size: 1.5em;
+}
+
+.dropdown-column:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.navbar-reg-sign{
+  padding-inline: 10%;
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+.navbar-reg-sign:hover{
+  color: black;
+  border-radius: 8px;
+}
+
+.navbar-main-column{
+  font-size: 2em;
+  margin: 0 0 !important;
+  padding: 0.5% 1%;
+}
+
+.navbar-main-column:hover{
+  color: black;
+  border-radius: 8px;
+}
+
+.navbar-main-title{
+  margin-left: 3%;
+  margin-right: 0 !important;
+  padding: 0.5% 1%;
+  font-size: 2.7em;
+}
+
+.navbar-main-title:hover{
+  color: black;
+  border-radius: 8px;
+}
+
+.navbar-quakeopneworld {
+  column-gap: 20px;
+  padding: 0 0 !important;
+  background-color: rgb(55 55 55 / 56%);
+  height: 100px;
+  border-style:solid;
+  border-inline-style: none;
+  border-top-style: none;
+}
+
+.pointer-focus-element {
+  cursor: pointer;
+}
+
+.button-sign-out {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .navbar-reg-sign{
+    padding-inline: 0;
+    font-size: 2em;
+    margin-right: 0;
+  }
+
+}

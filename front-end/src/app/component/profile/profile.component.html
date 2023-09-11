@@ -1,0 +1,46 @@
+<body class="padding-block-body body-profile">
+
+<navigation-component class="nav-component"> </navigation-component>
+
+<div class="content-profile" style="padding: 50px;" *ngIf="infoUser">
+
+  <div style="padding-block: 50px;">
+
+    <h1 style="font-size: 4rem;">Welcome {{infoUser.login}}</h1>
+
+    <h4 style="padding-top: 10px;">Money: {{infoUser.money}}</h4>
+
+  </div>
+
+  <h1>Actions</h1>
+
+  <form style="width: 80%;margin: auto;padding-block: 50px; display: grid; grid-template-columns: repeat(2,50%);padding-inline: 50px;" [formGroup]="sendMoneyForm">
+    <div style=" display: flex; justify-content: center; align-items: center;">
+      <p-fieldset style="width: 100%;" [collapsed]="true" [toggleable]="true" legend="Send money user">
+        <div style="display: flex;flex-direction: column;">
+          <p style="color: white;"> <b> {{nameSendForm[0].inputName}} </b><br>
+            <dx-text-box style="height: 50px" [formControlName]="nameSendForm[0].name" [placeholder]="nameSendForm[0].placeholder">
+
+            </dx-text-box>
+          </p>
+
+          <p style="color: white;"> <b> {{nameSendForm[1].inputName}} </b><br>
+            <dx-number-box style="height: 50px" [formControlName]="nameSendForm[1].name" [placeholder]="nameSendForm[1].placeholder">
+
+            </dx-number-box>
+          </p>
+
+          <button pButton [disabled]="sendMoneyForm.invalid"
+                  (click)="sendMoneyAnotherUser()" label="Send">
+          </button>
+        </div>
+      </p-fieldset>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+
+

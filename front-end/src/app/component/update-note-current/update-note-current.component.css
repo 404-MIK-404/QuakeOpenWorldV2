@@ -1,0 +1,31 @@
+
+.body-news-current {
+  background: url("src/assets/image/background/background-current-news/current-news-background.jpg");
+  background-size: cover;
+}
+
+.content-current-news{
+  background: gray;
+  width: 1300px;
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+}
+
+.item-screen {
+  width: 1200px;
+  height: 700px;
+  display: block;
+}
+
+
+@media (max-width: 1800px) {
+  .item-screen {
+    width: 100%;
+  }
+
+  .content-current-news {
+    width: 70%;
+  }
+
+}

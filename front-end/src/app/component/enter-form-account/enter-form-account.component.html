@@ -1,0 +1,64 @@
+
+
+<body class="padding-block-body content-sign-form">
+
+    <navigation-component class="nav-component"> </navigation-component>
+
+    <form style="padding-block: 5%; margin-block-end: 0; color: white;" [formGroup]="userForm">
+
+      <div style="display: flex;background: #353535;width: 45%;margin: auto;flex-direction: column;border-radius: 10px;box-shadow: 8px 8px 20px 0px gray;" >
+        <h1 style="word-wrap: break-word; text-align: center; font-size: 5rem; padding-block: 50px;">{{titleForm}}</h1>
+
+        <div *ngFor="let el of nameUserForm" style="text-align: center; padding-bottom: 3%">
+          <div *ngIf="el.name.toLowerCase().includes('password') else thisIsNotPasField">
+            <p class="label-name-input"> <b> {{el.inputName}} </b><br>
+              <dx-text-box mode="password" [placeholder]="el.placeholder" [showClearButton]="true"
+                           [formControlName]="el.name" class="input-user-form" [maxLength]="30">
+              </dx-text-box>
+            </p>
+          </div>
+          <ng-template #thisIsNotPasField>
+            <p class="label-name-input"><b> {{el.inputName}} </b><br>
+              <dx-text-box [placeholder]="el.placeholder" [maxLength]="20" class="input-user-form"
+                           [showClearButton]="true" [formControlName]="el.name">
+              </dx-text-box>
+            </p>
+          </ng-template>
+
+        </div>
+
+        <div *ngIf="!isClickUserCreate">
+          <div class="button-footer">
+            <button type="submit" (click)="signInUser()"
+                    [disabled]="userForm.invalid" class="btn-footer-item">
+              Sign in
+            </button>
+            <button type="submit"  (click)="setCreateUserFormValidation()"
+                    class="btn-footer-item"> Registration </button>
+          </div>
+        </div>
+
+        <div *ngIf="isClickUserCreate">
+          <div class="button-footer">
+
+            <button type="submit" [disabled]="userForm.invalid"
+                    (click)="registrationUser()" class="btn-footer-item">Create Account</button>
+
+            <button type="submit" (click)="setSignInUserFormValidation()"
+                    class="btn-footer-item">
+              Back</button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
+
+</body>
+
+
+
+
+

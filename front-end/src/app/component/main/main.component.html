@@ -1,0 +1,71 @@
+<body>
+
+  <navigation-component class="nav-component"> </navigation-component>
+
+  <div style="height: 100%; display: flex; flex-direction: column;">
+
+    <div style="padding-top: 5%; min-height: 1000px;flex: 1;" class="content-section-main">
+      <div style="display: flex;flex-direction: column;align-items: center; justify-content: center; height: 100%;">
+        <span style="margin: auto; line-height: 1.55; word-break: break-all;color: white;">
+          <div class="t-container">
+            <div class= "t225_title t-title t-title_md">
+              <h1 class="title-quake"><strong>Quake Openworld</strong></h1>
+            </div>
+          </div>
+          <div class="desc-quake">
+            <p>This is online game where many users of any platform
+              play together in a huge open world</p>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div class="content-section-about-game">
+        <div style="width: 100%;height: 100%; position: relative; font-size: 1.6em;">
+          <h1 style="font-size: 2.5em; text-align:center">About game</h1>
+          <div class="content-conf-game">
+            <div style="display: flex; flex-direction: column;">
+              <p><strong style="font-size: 1.5em;">Engine: </strong>Winquake (and newer)</p>
+              <p><strong style="font-size: 1.5em;">Platforms: </strong>  Nintendo ds/dsi/3ds, PSP,PS2, Xbox original and others </p>
+              <p><strong style="font-size: 1.5em;">Minimal system requirements: </strong> 16mb RAM, access tp the internet</p>
+              <p><strong style="font-size: 1.5em;">Genre: </strong> online RPG </p>
+            </div>
+            <div>
+              <p-galleria [value]="images[1]" [autoPlay]="true" [circular]="true" [transitionInterval]="2500"
+                          [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [containerStyle]="{ 'max-width': 'auto','text-align':'center','padding': '10px'}">
+                <ng-template pTemplate="item" let-item>
+                  <img [src]="item.itemImageSrc" class="item-screen-work-platform" />
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="content-section-screenshot">
+      <h1 style="color:#ffffff; text-align: center; padding-block: 2%; font-size: 5rem;">Game footage</h1>
+      <div style="padding-bottom: 100px; display: flex; justify-content: center;">
+        <p-galleria [value]="images[0]" [autoPlay]="true" [circular]="true" [transitionInterval]="3000" [showItemNavigators]="true"
+                    [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [containerStyle]="{ 'max-width': '1200px','text-align':'center'}">
+          <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" class="item-screen-game" />
+          </ng-template>
+        </p-galleria>
+      </div>
+      <h1 style="text-align: center; font-size: 4em">
+        <strong>Join to the Quake Openworld <button (click)="changeVisibleFormUser()"><strong>now</strong></button> ! </strong>
+      </h1>
+    </div>
+
+    <footer class="footer-content">
+      <div class="block-footer">
+        <span><a href="https://discord.com/invite/RDtajRpx2S"><img class="logo-vk-discord-img" src='{{"assets/image/logo/discord_logo.png"}}'></a></span>
+        <p style="color: rgb(255,255,255); text-align: center;">Contact us:<br><strong>email: kaidevstudio@gmail.com</strong></p>
+        <span><a href="https://vk.com/quakepspandroidpc"><img class="logo-vk-discord-img" src='{{"assets/image/logo/vk_logo.png"}}'></a></span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+

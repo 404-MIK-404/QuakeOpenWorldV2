@@ -1,0 +1,40 @@
+
+<body class="padding-block-body body-news-current">
+
+  <navigation-component class="nav-component"> </navigation-component>
+
+  <div style="padding: 50px;">
+
+
+    <div class="content-current-news">
+
+      <div style="padding-inline: 50px;margin: auto;padding-bottom: 50px;">
+        <h1 *ngIf="news" style="text-align: center; padding-block: 50px;font-size: 4rem;" class="title-current-news">{{news.title}}</h1>
+
+        <p style="white-space: pre-line;">{{news.description}}</p>
+
+      </div>
+
+      <div *ngIf="news.image" class="content-news">
+
+        <h1 style="text-align: center">Screenshots</h1>
+        <div style="padding-inline: 50px;padding-bottom: 100px; display: flex; justify-content: center;">
+          <p-galleria [value]="news.image" [circular]="true" [transitionInterval]="3000" [showItemNavigators]="true"
+                      [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
+                      [containerStyle]="{ 'max-width': '1200px','text-align':'center'}">
+            <ng-template pTemplate="item" let-item>
+              <img [src]="item.itemImageSrc" class="item-screen"/>
+            </ng-template>
+          </p-galleria>
+        </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+
+
+
+</body>

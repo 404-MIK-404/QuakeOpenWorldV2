@@ -1,0 +1,19 @@
+.p-fieldset-toggleable .p-fieldset-legend a {
+  cursor: pointer !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  overflow: hidden !important;
+  position: relative !important;
+  justify-content: flex-start !important;
+}
+
+
+
+.body-profile{
+  background: url("src/assets/image/background/background-profile/background-profile.jpg");
+  background-size: cover;
+}
+
+.content-profile{
+  color: white;
+}
